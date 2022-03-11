@@ -34,15 +34,7 @@ else:
                 winreg.CloseKey(registry_key)
                 return value
             except WindowsError:
-                return None
-
-        #Example MouseSensitivity
-        #Read value 
-        #print (get_reg('rpc'))
-
-        #Set Value 1/20 (will just write the value to reg, the changed mouse val requires a win re-log to apply*)
-        #print(set_reg('autostarttest', str("hilfeIchbinhiergefangen")))
-        
+                return None      
         
         #Ask for Program Name (case sensitive)
         script = input("Welcome to your Script-Autostart generator!\nBe careful to run this script in the directory that your Script is in\nScript-Name(case sensitive + .py or .pyw) : ")
